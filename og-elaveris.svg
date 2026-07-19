@@ -22,7 +22,7 @@
   <text x="164" y="401" fill="#f3efe5" font-family="Georgia, serif" font-size="78">Décider.</text>
   <text x="75" y="486" fill="#e2c77f" font-family="Georgia, serif" font-size="78" font-style="italic">Avancer.</text>
 
-  <image href="logo-elaveris-phoenix.png" x="817" y="66" width="268" height="448"/>
+  <image href="logo-elaveris-phoenix-v2.png" x="817" y="66" width="268" height="448"/>
   <text x="952" y="559" text-anchor="middle" fill="#9da6a1" font-family="Inter, Arial, sans-serif" font-size="15" letter-spacing="3">TRANSFORMATION · DIRECTION · TRAJECTOIRE</text>
   <line x1="75" y1="574" x2="1125" y2="574" stroke="#c6a15b" stroke-opacity=".36"/>
 </svg>
