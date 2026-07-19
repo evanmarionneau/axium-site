@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" role="img" aria-labelledby="title desc">
+  <title id="title">Logo ELAVERIS</title>
+  <desc id="desc">Monogramme E traversé par une trajectoire dorée, suivi du nom ELAVERIS.</desc>
+  <rect width="760" height="180" fill="#080a0a"/>
+  <g transform="translate(26 25)">
+    <rect x="1" y="1" width="128" height="128" rx="3" fill="#0f1212" stroke="#c6a15b" stroke-width="2"/>
+    <path d="M34 30V100M34 30H92M34 65H78M34 100H92" fill="none" stroke="#f3efe5" stroke-width="6"/>
+    <path d="M98 22C78 39 70 53 72 66C74 82 88 92 101 109" fill="none" stroke="#e2c77f" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="72" cy="66" r="5" fill="#e2c77f"/>
+  </g>
+  <text x="186" y="88" fill="#f3efe5" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700" letter-spacing="12">ELAVERIS</text>
+  <line x1="189" y1="111" x2="704" y2="111" stroke="#c6a15b" stroke-width="1" opacity=".55"/>
+  <text x="189" y="139" fill="#e2c77f" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="4">STRUCTURER · DÉCIDER · AVANCER</text>
+</svg>
