@@ -17,8 +17,11 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="ELAVERIS — Structurer. Décider. Avancer.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://evanmarionneau.github.io/axium-site/og-elaveris.png">
   <link rel="canonical" href="https://evanmarionneau.github.io/axium-site/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon-preview.png">
+  <link rel="preload" href="logo-elaveris-symbol.svg" as="image" type="image/svg+xml">
   <title>ELAVERIS — Conseil en structuration et pilotage d’entreprise</title>
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
   <style>
@@ -149,7 +152,7 @@
     }
     .header-inner { display: flex; align-items: center; min-height: 86px; }
     .brand { display: inline-flex; align-items: center; gap: .8rem; flex: 0 0 auto; }
-    .brand-mark { width: 46px; height: 46px; }
+    .brand-mark { width: 46px; height: 46px; object-fit: contain; filter: drop-shadow(0 5px 12px rgba(198,161,91,.14)); }
     .brand-copy { display: grid; line-height: 1; }
     .brand-copy strong { color: var(--white); font-size: 1rem; letter-spacing: .23em; }
     .brand-copy small { margin-top: .42rem; color: var(--gold-bright); font-size: .55rem; letter-spacing: .18em; text-transform: uppercase; }
@@ -261,14 +264,12 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      border: 1px solid rgba(226,199,127,.16);
-      border-radius: 50%;
       transform: translate(-50%, -50%);
       content: "";
     }
-    .identity-symbol::before { width: 265px; height: 265px; }
-    .identity-symbol::after { width: 190px; height: 190px; }
-    .identity-symbol svg { position: absolute; z-index: 2; top: 50%; left: 50%; width: 230px; transform: translate(-50%, -50%); }
+    .identity-symbol::before { width: 240px; height: 280px; background: radial-gradient(ellipse, rgba(198,161,91,.13), transparent 68%); }
+    .identity-symbol::after { width: 1px; height: 270px; background: linear-gradient(transparent, rgba(226,199,127,.22), transparent); }
+    .identity-symbol img { position: absolute; z-index: 2; top: 50%; left: 50%; width: 208px; height: 286px; object-fit: contain; filter: drop-shadow(0 18px 34px rgba(0,0,0,.38)); transform: translate(-50%, -50%); }
     .identity-coordinates { position: absolute; top: 50%; right: -25px; color: rgba(255,255,255,.42); font-size: .56rem; letter-spacing: .2em; transform: rotate(90deg); }
     .identity-note {
       position: absolute;
@@ -347,7 +348,7 @@
     .origin-card { position: relative; min-height: 570px; padding: 2.4rem; overflow: hidden; border: 1px solid var(--line); background: var(--obsidian); }
     .origin-card::before { position: absolute; top: -18%; right: -26%; width: 420px; height: 420px; border: 1px solid rgba(226,199,127,.18); border-radius: 50%; box-shadow: 0 0 0 55px rgba(226,199,127,.035), 0 0 0 110px rgba(226,199,127,.025); content: ""; }
     .origin-label { color: var(--gold-bright); font-size: .62rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; }
-    .origin-monogram { position: absolute; top: 116px; right: 45px; width: 260px; opacity: .9; }
+    .origin-monogram { position: absolute; top: 72px; right: 28px; width: 245px; height: 330px; object-fit: contain; opacity: .46; filter: drop-shadow(0 18px 35px rgba(198,161,91,.12)); }
     .origin-copy { position: absolute; right: 2.4rem; bottom: 2.4rem; left: 2.4rem; }
     .origin-copy span { color: var(--gold-bright); font-family: var(--serif); font-size: 4.5rem; line-height: 1; }
     .origin-copy h3 { margin: .7rem 0 1rem; font-family: var(--serif); font-size: 2rem; font-weight: 400; }
@@ -515,7 +516,7 @@
       .method-step b { grid-row: span 2; width: 52px; height: 52px; margin-bottom: 0; }
       .method-step h3 { margin-top: .15rem; }
       .origin-card { min-height: 490px; padding: 1.5rem; }
-      .origin-monogram { top: 105px; right: 12px; width: 235px; }
+      .origin-monogram { top: 72px; right: -5px; width: 215px; height: 285px; }
       .origin-copy { right: 1.5rem; bottom: 1.5rem; left: 1.5rem; }
       .origin-copy span { font-size: 3.6rem; }
       .values { grid-template-columns: 1fr; }
@@ -539,12 +540,7 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a class="brand" href="#accueil" aria-label="ELAVERIS — Accueil">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect x="1" y="1" width="62" height="62" rx="2" fill="#0f1212" stroke="#c6a15b" stroke-width="1.2"/>
-          <path d="M17 15V49M17 15H45M17 32H38M17 49H45" fill="none" stroke="#f3efe5" stroke-width="3.1" stroke-linecap="square"/>
-          <path d="M47 11C38 19 34 25 35 32C36 40 43 44 49 52" fill="none" stroke="#e2c77f" stroke-width="3.2" stroke-linecap="round"/>
-          <circle cx="35" cy="32" r="2.8" fill="#e2c77f"/>
-        </svg>
+        <img class="brand-mark" src="logo-elaveris-symbol.svg" alt="">
         <span class="brand-copy"><strong>ELAVERIS</strong><small>Structurer · Décider · Avancer</small></span>
       </a>
 
@@ -589,17 +585,13 @@
         </div>
 
         <aside class="identity-card reveal reveal-delay-2" aria-label="Identité ELAVERIS, enracinée dans l’Allier">
-          <div class="identity-top"><span>Elaver · Allier</span><span>46.1319° N</span></div>
+          <div class="identity-top"><span>Elaver · Trajectoire</span><span>46.1319° N</span></div>
           <div class="identity-symbol">
-            <svg viewBox="0 0 260 260" role="img" aria-label="Monogramme ELAVERIS">
-              <path d="M66 46V212M66 46H190M66 129H159M66 212H190" fill="none" stroke="#f3efe5" stroke-width="8"/>
-              <path d="M198 26C157 61 140 96 145 130C150 167 181 187 206 230" fill="none" stroke="#e2c77f" stroke-width="8" stroke-linecap="round"/>
-              <circle cx="145" cy="130" r="9" fill="#e2c77f"/>
-            </svg>
+            <img src="logo-elaveris-symbol.svg" alt="Phénix abstrait ELAVERIS orienté vers une étoile directionnelle">
             <span class="identity-coordinates">DIRECTION · STRUCTURE · ACTION</span>
           </div>
           <div class="identity-note">
-            <strong>Une identité enracinée.<br>Une ambition ouverte.</strong>
+            <strong>Une identité en mouvement.<br>Une direction affirmée.</strong>
             <p>ELAVERIS puise son nom dans Elaver, ancien nom de l’Allier — un point d’ancrage pour aider chaque projet à trouver sa trajectoire.</p>
           </div>
         </aside>
@@ -701,11 +693,7 @@
       <div class="container about-grid">
         <article class="origin-card reveal">
           <span class="origin-label">Origine de la marque</span>
-          <svg class="origin-monogram" viewBox="0 0 260 260" aria-hidden="true">
-            <path d="M66 46V212M66 46H190M66 129H159M66 212H190" fill="none" stroke="#f3efe5" stroke-width="8"/>
-            <path d="M198 26C157 61 140 96 145 130C150 167 181 187 206 230" fill="none" stroke="#e2c77f" stroke-width="8" stroke-linecap="round"/>
-            <circle cx="145" cy="130" r="9" fill="#e2c77f"/>
-          </svg>
+          <img class="origin-monogram" src="logo-elaveris-symbol.svg" alt="" aria-hidden="true">
           <div class="origin-copy"><span>Elaver</span><h3>L’Allier comme point d’ancrage.</h3><p>Un nom singulier, enraciné dans le territoire et pensé pour porter une ambition : donner aux projets une structure solide et une direction durable.</p></div>
         </article>
 
@@ -786,12 +774,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
-          <rect x="1" y="1" width="62" height="62" rx="2" fill="#0f1212" stroke="#c6a15b" stroke-width="1.2"/>
-          <path d="M17 15V49M17 15H45M17 32H38M17 49H45" fill="none" stroke="#f3efe5" stroke-width="3.1"/>
-          <path d="M47 11C38 19 34 25 35 32C36 40 43 44 49 52" fill="none" stroke="#e2c77f" stroke-width="3.2" stroke-linecap="round"/>
-          <circle cx="35" cy="32" r="2.8" fill="#e2c77f"/>
-        </svg>
+        <img class="brand-mark" src="logo-elaveris-symbol.svg" alt="">
         <div><strong>ELAVERIS</strong><span>Conseil en structuration et pilotage</span></div>
       </div>
       <div class="footer-right"><p>© <span id="year"></span> ELAVERIS · Projet en cours de création</p><p><a href="mailto:evanmarionneau@gmail.com">Contact</a></p></div>

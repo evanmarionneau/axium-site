@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260" role="img" aria-labelledby="title desc">
+  <title id="title">Symbole ELAVERIS</title>
+  <desc id="desc">Un phénix abstrait s’élève vers une étoile directionnelle, porté par deux trajectoires inspirées de l’Elaver.</desc>
+  <defs>
+    <g id="wing">
+      <path d="M89 139C70 105 51 68 38 28C31 68 46 111 78 145Z"/>
+      <path d="M78 151C56 129 37 103 25 74C25 105 43 135 72 158Z"/>
+      <path d="M72 164C50 150 34 132 22 108C26 136 43 155 69 170Z"/>
+      <path d="M69 176C48 168 34 156 24 141C31 163 46 175 69 181Z"/>
+    </g>
+  </defs>
+
+  <g fill="#c6a15b">
+    <path d="M100 4L105 29L134 36L105 43L100 69L95 43L66 36L95 29Z"/>
+    <path d="M100 14L102 32L120 36L102 40L100 58L98 40L80 36L98 32Z" fill="#e2c77f"/>
+    <g fill="none" stroke="#c6a15b" stroke-width="3.5" stroke-linecap="round">
+      <path d="M69 56A40 40 0 0 1 69 17"/>
+      <path d="M131 17A40 40 0 0 1 131 56"/>
+    </g>
+
+    <use href="#wing"/>
+    <use href="#wing" transform="translate(200 0) scale(-1 1)"/>
+
+    <path d="M100 70C112 89 111 104 100 117C89 104 88 89 100 70Z"/>
+    <path d="M96 104C81 117 81 133 96 148C90 134 92 121 100 111Z"/>
+    <path d="M104 104C119 117 119 133 104 148C110 134 108 121 100 111Z"/>
+
+    <path d="M80 142C70 160 72 180 85 199C96 215 98 230 98 254C89 228 72 213 68 191C65 172 70 155 80 142Z"/>
+    <path d="M120 142C130 160 128 180 115 199C104 215 102 230 102 254C111 228 128 213 132 191C135 172 130 155 120 142Z"/>
+
+    <path d="M100 122L119 151L100 181L81 151Z"/>
+  </g>
+
+  <path d="M100 135L110 151L100 168L90 151Z" fill="#f3efe5"/>
+  <path d="M100 142L105 151L100 160L95 151Z" fill="#080a0a"/>
+
+  <path d="M61 162C40 178 35 196 52 211C65 222 71 232 69 252C79 230 74 215 60 202C49 192 50 179 66 168Z" fill="#f3efe5"/>
+  <path d="M139 162C160 178 165 196 148 211C135 222 129 232 131 252C121 230 126 215 140 202C151 192 150 179 134 168Z" fill="#f3efe5"/>
+</svg>
